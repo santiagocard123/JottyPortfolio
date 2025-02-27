@@ -1,0 +1,265 @@
+body, html {
+  font-family: 'Arial', sans-serif;
+  background-color: #080808;
+  color: #02070c;
+  overflow-x: hidden;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.h2{
+  color: #00FFC6;
+}
+/* Navbar */
+.navbar {
+  background-color: rgba(36, 35, 35, 0.5) !important; 
+  backdrop-filter: blur(10px); 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+  margin-top: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1); 
+  border-radius: 20px; 
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  color: #fff !important;
+}
+
+.navbar-nav .nav-link {
+  color: #fff !important;
+  margin-left: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #32d3b0 !important;
+}
+
+/* Hero Section */
+.hero-container {
+  padding: 11rem 0;
+  margin-top: 40px;
+}
+
+
+
+.hero-container h1 {
+  font-size: 4rem;
+  color: #007bff;
+}
+
+.hero-container p {
+  font-size: 1.2rem;
+  color: #eef0f1;
+}
+
+/* Skills Section */
+.skills-container {
+  padding: 4rem 0;
+}
+
+
+
+.skill-card {
+  transition: transform 0.3s ease;
+  
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+
+.skill-card i {
+  color: #007bff;
+  
+}
+
+/* Projects Section */
+.projects-carousel {
+  box-shadow: 0px 0px 15px rgba(0, 255, 170, 0.8);
+  margin: auto;
+  width: 90%; 
+  max-width: 1600px; 
+  padding: 20px; 
+  box-sizing: border-box; 
+}
+
+
+
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 2rem;
+} 
+
+
+/* About Section */
+.about-container {
+  padding: 4rem 0;
+}
+
+.about-container h2 {
+  color: #dee3e7;
+  margin-bottom: 3rem;
+}
+
+.about-container img {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section */
+.contact-container {
+  padding: 4rem 0;
+}
+
+.contact-container h2 {
+  color: #007bff;
+  margin-bottom: 3rem;
+}
+
+/* Footer */
+.footer {
+  background-color: rgba(30, 30, 31, 0.5) !important; 
+  backdrop-filter: blur(10px); 
+  color: #fff;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1); 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.skill-card {
+  transition: all 0.3s ease; 
+  border-radius: 15px; 
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1); 
+  
+}
+
+
+.skill-icon {
+  color: #007bff; 
+  margin-bottom: 1rem; 
+  transition: color 0.3s ease; 
+}
+
+
+.glass-card {
+  background-color: rgba(51, 47, 47, 0.3); 
+  backdrop-filter: blur(10px); 
+  border-radius: 12px;
+  padding: 10px;
+  
+  box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.3); 
+
+  transition: all 0.3s ease-in-out;
+}
+
+.glass-card:hover {
+  background-color: rgba(30, 30, 31, 0.7);
+  box-shadow: 0px 0px 10px rgba(0, 255, 128, 0.5); 
+}
+
+
+.skill-icon {
+  transition: transform 0.2s ease-in-out;
+}
+
+
+
+.skill-title {
+  font-size: 0.85rem;
+  font-weight: bold;
+  text-shadow: 0px 0px 5px rgba(0, 236, 118, 0.5); 
+}
+
+
+.projects-container {
+  padding: 50px;
+  background-color: rgba(51, 47, 47, 0.3); 
+  border-radius: 20px;
+  backdrop-filter: blur(60px); 
+  border: 1px solid rgba(255, 255, 255, 0.1); 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); 
+}
+
+.projects-carousel {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.project-item {
+  position: relative;
+  max-height: 700px;
+  text-align: center;
+}
+
+.project-image {
+  max-height: 700px;
+  object-fit:contain;
+  border-radius: 15px;
+  
+}
+
+.carousel-text {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.carousel-text h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #00FFC6;
+  text-shadow: 0px 0px 10px rgba(0, 255, 170, 0.8);
+}
+
+.carousel-text p {
+  font-size: 1.2rem;
+  color: #E0E0E0;
+}
+
+.text-center{
+  margin-top: 17px;
+}
+
+@media (max-width: 768px) {
+
+  .body{
+    overflow-x: hidden;
+  }
+  .projects-carousel {
+    width: 100vw; 
+    margin: auto; 
+    
+  }
+  
+  .carousel-text h3 {
+    font-size: 1.0rem; 
+  }
+  
+  .project-image {
+    height: 200px; 
+    object-fit: cover; 
+    padding: 10px;
+  }
+  .project-description {
+    display: none;
+  }
+  .projects-container {
+    display: flex;
+    justify-content: center;
+    padding: 3px;
+
+  }
+  
+}
+
